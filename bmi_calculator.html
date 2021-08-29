@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_link-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="nav-brand"></div>
+      <nav class="navbar_items">
+        <div class="navbar_link">
+          <a href="index.html"
+            >Home
+          </a>
+        </div>
+        <div class="navbar_link">
+          <a href="explanation.html">Explanation</a>
+        </div>
+        <div class="navbar_link">
+          <a href="bmi_calculator.html"
+            >BMI Calculator </a>
+        </div>
+        <div class="navbar_link">
+          <a href="solution.html"
+            >Solutions </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="bmi_calculation">
+      <p class="bmi_desc">
+        We will be checking your BMI by your weight and height only (if you thin
+        and lean but is still overweight, then don't worry).
+      </p>
+      <p class="bmi_desc_1">If you want to check your BMI on your own, 
+        then here is the formula</p>
+      <h2>Weight in kg divided by height in meter square</h2>
+      <form name="bmiForm" onsubmit="return false">
+        <div class="form-title">BMI for children</div>
+        <div class="main-form">
+          <label class="child_age">Age:</label>
+          <select id="age">
+          </select>
+          <input
+            type="number"
+            name="weight"
+            size="10"
+            placeholder=" Your Weight(kg)"
+          /><br />
+          <input
+            type="text"
+            name="height"
+            size="10"
+            placeholder="Your Height(cm):"
+          /><br />
+          <button class="btn" onClick="calculateBmi()">Calculate BMI</button>
+          <input
+            type="text"
+            name="bmi"
+            size="10"
+            placeholder="Your BMI"
+          /><br />
+          <input
+            type="text"
+            name="meaning"
+            size="25"
+            placeholder="  This Means"
+          /><br />
+          <button class="btn-rest">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="footer_desc">
+        <a href="solution.html"
+          >Next page </a>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i
+            >
+      </div>
+    </div>
+<script src="./app.js">
+
+</script>
+  </body>
+</html>
